@@ -1,0 +1,13 @@
+{"db": {
+  "userName": "AppUAT_Account",
+  "password": "7SkvsT*5$@nYFWz6",
+  "server": "TAR-HOSQL01DEV",
+  "options": {
+      "database": "ENTERPRISE",
+      "encrypt": false,
+      "rowCollectionOnRequestCompletion" : true
+  }
+}
+
+
+}

@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-09T09:55:43.711Z",
+    "end": "2023-03-09T09:57:59.274Z",
+    "duration": 135563,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "996f02f4-be24-4203-a4e8-4fb687719b99",
+      "title": "",
+      "fullFile": "cypress\\e2e\\FeedStock\\Trader.cy.js",
+      "file": "cypress\\e2e\\FeedStock\\Trader.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "445be9b4-bf42-446d-9533-d0b22895c4bc",
+          "title": "Trader",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "check all mandatory fields",
+              "fullTitle": "Trader check all mandatory fields",
+              "timedOut": null,
+              "duration": 64514,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#lnkbtnAdd').click(); // ADD NEW DEAL    \ncy.get('.p-l-5 > .btn-group > .btn > .filter-option').click(); //Great Plains Company \ncy.get('.p-l-5 > .btn-group > .open > .dropdown-menu > [data-original-index=\"2\"] > a').click();\ncy.get('#cphContent_rblDealType > tbody > tr > :nth-child(1) > label').click(); //deal type  \ncy.get('#txtBxDealTitle').type(\"TESTING TARGRAY -FEEDSTOCK CONTRACT Application\").wait(2000);\ncy.get(':nth-child(3) > :nth-child(1) > .form-line > .btn-group > .btn > .filter-option').click();\ncy.get(':nth-child(3) > :nth-child(1) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"1\"] > a').click();\ncy.get(':nth-child(2) > :nth-child(3) > :nth-child(2) > .form-line > .btn-group > .btn > .filter-option').click();\ncy.get(':nth-child(2) > :nth-child(3) > :nth-child(2) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"1\"] > a').click();\ncy.get(':nth-child(3) > .form-line > .btn-group > .btn > .filter-option').click(); //trading rules dropdown  \ncy.get(':nth-child(3) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"3\"] > a > .text').click();\ncy.get('[style=\"margin-right: 2px;\"] > .form-line > .btn-group > .btn').click(); //quality survey dropdown  \ncy.get('[style=\"margin-right: 2px;\"] > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"1\"] > a').click();\ncy.get(':nth-child(5) > .form-line > .btn-group > .btn > .filter-option').click(); //quantity survey dropdown  \ncy.get(':nth-child(5) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"1\"] > a > .text').click();\ncy.get(':nth-child(6) > .form-line > .btn-group > .btn > .filter-option').click(); //method of transport \ncy.get(':nth-child(6) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"2\"] > a').click();\ncy.get(':nth-child(7) > .form-line > .btn-group > .btn > .filter-option').click(); //insepection cost  \ncy.get(':nth-child(7) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"1\"] > a > .text').click();\ncy.get('#tbxCounterpartyContract').type(\"testing targray\"); //counterparty contract   \ncy.get('#tbxContractTerms').type(\"testing dnjvdnfjjvjkjkdsnjkncjdncjvnjndfjnvjnjdnvjtargray\"); //Contract Terms \ncy.get('#txtBxDealNotes').type(\"testing dhhjbhvjbhfdbhdvbjhdbhcdjbvhsbtargray\"); //DEAL NOTES \ncy.get('#tbxSpecialClause').type(\"testingsacndhdfjkdvkl115151515156d556s56c15sd1c5v cv fdvb targray\"); //SPECIALCLUASE    \ncy.get('#pnlDealDetails > :nth-child(3)'); //BROKER \ncy.get('#cphContent_rblBroker_Applicable > tbody > tr > :nth-child(1) > label').click(); //BROKER YES RADIO BUTTON \n//cy.get('#cphContent_rblBroker_Applicable > tbody > tr > :nth-child(2) > label')//BROKER NO RADIO BUTTON  \ncy.get('#cphContent_BrokerDiv1 > :nth-child(1) > .form-line > .btn-group > .btn > .filter-option').click(); // BROKER IF RADIO BUTTON YES MEANS   \ncy.get('#cphContent_BrokerDiv1 > :nth-child(1) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"4\"] > a > .text').click();\n//cy.get('#cphContent_BrokerDiv1 > :nth-child(2)').type(\"0\")   // broker fee\ncy.get('#cphContent_BrokerDiv1 > :nth-child(3) > .form-line > .btn-group > .btn > .filter-option').click();\n//cy.get('#cphContent_BrokerDiv1 > :nth-child(3) > .form-line > .btn-group > .btn').click(); //broker fee per \ncy.get('#cphContent_BrokerDiv1 > :nth-child(3) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"1\"] > a > .text').click();\ncy.get('#cphContent_BrokerDiv1 > :nth-child(4) > .form-line > .btn-group > .btn > .filter-option').click(); //currency   \ncy.get('#cphContent_BrokerDiv1 > :nth-child(4) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"2\"] > a > .text').click();\ncy.get('#txtBxBrokerNotes').type('sdnjvkjnfndjncjcnjcndknjnvnvj '); //Broker notes \ncy.get('#cphContent_pnlCustomer > fieldset.full-border > .row > :nth-child(1) > .form-line > .btn-group > .btn > .filter-option').click(); //GP CUSTOMER  \ncy.get('#cphContent_pnlCustomer > fieldset.full-border > .row > :nth-child(1) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"3\"] > a').click(); //Payment Terms Notes  \ncy.wait(10000);\n//cy.get('#cphContent_rblCustomerPaymentTermsOverride > tbody > tr > :nth-child(1) > label')//Override Payment Terms \ncy.get('#cphContent_rblCustomerPaymentTermsOverride > tbody > tr > :nth-child(1) > label').click(); //Override Payment Terms Yes radio button \n// cy.get('#cphContent_rblVendorPaymentTermsOverride > tbody > tr > :nth-child(2) > label')//Override Payment Terms no radio button  \ncy.get('#txtBxCustomerPaymentTermsOverrideNotes').type('sdjkvjvfjnvndjvknd');\n//cy.get('#cphContent_pnlSupplier > fieldset.full-border > .row > :nth-child(1) > .form-line > .btn-group > .btn')//Great Plains Supplier \n//cy.get('#cphContent_rblVendorPaymentTermsOverride > tbody > tr > :nth-child(1) > label')//Override Payment Terms Yes radio button  \n//cy.get('#cphContent_rblVendorPaymentTermsOverride > tbody > tr > :nth-child(2) > label')//Override Payment Terms no radio button   \ncy.get('#cphContent_pnlProduct > fieldset.full-border > :nth-child(2) > :nth-child(1) > .form-line > .btn-group > .btn > .filter-option').click(); //Product\ncy.get('#cphContent_pnlProduct > fieldset.full-border > :nth-child(2) > :nth-child(1) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"4\"] > a > .text').click();\ncy.get('#tbxProductQuality').type('good sdnjnvkjdfnjkj'); //Product Quality  \ncy.get('#lnkSaveDeal').click(); //SAVE DEAL  \ncy.get('#cphContent_rfvtxtBxBrokerFee').should('have.text', 'Required').then(() => {\n  done();\n});\n// cy.screenshot();\n//done();",
+              "err": {},
+              "uuid": "fccfe8e5-4638-4104-b38f-98d6d5ffeabb",
+              "parentUUID": "445be9b4-bf42-446d-9533-d0b22895c4bc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "save_button",
+              "fullTitle": "Trader save_button",
+              "timedOut": null,
+              "duration": 66878,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#lnkbtnAdd').click(); // ADD NEW DEAL    \ncy.get('.p-l-5 > .btn-group > .btn > .filter-option').click(); //Great Plains Company \ncy.get('.p-l-5 > .btn-group > .open > .dropdown-menu > [data-original-index=\"2\"] > a').click();\ncy.get('#cphContent_rblDealType > tbody > tr > :nth-child(1) > label').click(); //deal type  \ncy.get('#txtBxDealTitle').type(\"TESTING TARGRAY -FEEDSTOCK CONTRACT Application\").wait(2000);\ncy.get(':nth-child(3) > :nth-child(1) > .form-line > .btn-group > .btn > .filter-option').click();\ncy.get(':nth-child(3) > :nth-child(1) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"1\"] > a').click();\ncy.get(':nth-child(2) > :nth-child(3) > :nth-child(2) > .form-line > .btn-group > .btn > .filter-option').click();\ncy.get(':nth-child(2) > :nth-child(3) > :nth-child(2) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"1\"] > a').click();\ncy.get(':nth-child(3) > .form-line > .btn-group > .btn > .filter-option').click(); //trading rules dropdown  \ncy.get(':nth-child(3) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"3\"] > a > .text').click();\ncy.get('[style=\"margin-right: 2px;\"] > .form-line > .btn-group > .btn').click(); //quality survey dropdown  \ncy.get('[style=\"margin-right: 2px;\"] > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"1\"] > a').click();\ncy.get(':nth-child(5) > .form-line > .btn-group > .btn > .filter-option').click(); //quantity survey dropdown  \ncy.get(':nth-child(5) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"1\"] > a > .text').click();\ncy.get(':nth-child(6) > .form-line > .btn-group > .btn > .filter-option').click(); //method of transport \ncy.get(':nth-child(6) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"2\"] > a').click();\ncy.get(':nth-child(7) > .form-line > .btn-group > .btn > .filter-option').click(); //insepection cost  \ncy.get(':nth-child(7) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"1\"] > a > .text').click();\ncy.get('#tbxCounterpartyContract').type(\"testing targray\"); //counterparty contract   \ncy.get('#tbxContractTerms').type(\"testing dnjvdnfjjvjkjkdsnjkncjdncjvnjndfjnvjnjdnvjtargray\"); //Contract Terms \ncy.get('#txtBxDealNotes').type(\"testing dhhjbhvjbhfdbhdvbjhdbhcdjbvhsbtargray\"); //DEAL NOTES \ncy.get('#tbxSpecialClause').type(\"testingsacndhdfjkdvkl115151515156d556s56c15sd1c5v cv fdvb targray\"); //SPECIALCLUASE    \n/* cy.get('#pnlDealDetails > :nth-child(3)')//BROKER \n//cy.get('#cphContent_rblBroker_Applicable > tbody > tr > :nth-child(1) > label').click();//BROKER YES RADIO BUTTON \n //cy.get('#cphContent_rblBroker_Applicable > tbody > tr > :nth-child(2) > label')//BROKER NO RADIO BUTTON  \n// cy.get('#cphContent_BrokerDiv1 > :nth-child(1) > .form-line > .btn-group > .btn > .filter-option').click(); // BROKER IF RADIO BUTTON YES MEANS   \n cy.get('#cphContent_BrokerDiv1 > :nth-child(1) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"4\"] > a > .text').click();\n \n cy.get('#cphContent_BrokerDiv1 > :nth-child(3) > .form-line > .btn-group > .btn > .filter-option').click();\n \n cy.get('#cphContent_BrokerDiv1 > :nth-child(3) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"1\"] > a > .text').click();\n cy.get('#cphContent_BrokerDiv1 > :nth-child(4) > .form-line > .btn-group > .btn > .filter-option').click(); //currency   \n cy.get('#cphContent_BrokerDiv1 > :nth-child(4) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"2\"] > a > .text').click();\n cy.get('#txtBxBrokerNotes').type('sdnjvkjnfndjncjcnjcndknjnvnvj '); //Broker notes */\ncy.get('#cphContent_pnlCustomer > fieldset.full-border > .row > :nth-child(1) > .form-line > .btn-group > .btn > .filter-option').click(); //GP CUSTOMER  \ncy.get('#cphContent_pnlCustomer > fieldset.full-border > .row > :nth-child(1) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"3\"] > a').click(); //Payment Terms Notes  \ncy.wait(10000);\n//cy.get('#cphContent_rblCustomerPaymentTermsOverride > tbody > tr > :nth-child(1) > label')//Override Payment Terms \ncy.get('#cphContent_rblCustomerPaymentTermsOverride > tbody > tr > :nth-child(1) > label').click(); //Override Payment Terms Yes radio button \n// cy.get('#cphContent_rblVendorPaymentTermsOverride > tbody > tr > :nth-child(2) > label')//Override Payment Terms no radio button  \ncy.get('#txtBxCustomerPaymentTermsOverrideNotes').type('sdjkvjvfjnvndjvknd');\n//cy.get('#cphContent_pnlSupplier > fieldset.full-border > .row > :nth-child(1) > .form-line > .btn-group > .btn')//Great Plains Supplier \n//cy.get('#cphContent_rblVendorPaymentTermsOverride > tbody > tr > :nth-child(1) > label')//Override Payment Terms Yes radio button  \n//cy.get('#cphContent_rblVendorPaymentTermsOverride > tbody > tr > :nth-child(2) > label')//Override Payment Terms no radio button   \ncy.get('#cphContent_pnlProduct > fieldset.full-border > :nth-child(2) > :nth-child(1) > .form-line > .btn-group > .btn > .filter-option').click(); //Product\ncy.get('#cphContent_pnlProduct > fieldset.full-border > :nth-child(2) > :nth-child(1) > .form-line > .btn-group > .open > .dropdown-menu > [data-original-index=\"4\"] > a > .text').click();\ncy.get('#tbxProductQuality').type('good sdnjnvkjdfnjkj'); //Product Quality  \ncy.get('#lnkSaveDeal').click(); //SAVE DEAL \n// cy.get('#cphContent_lblDealNumber').invoke('text').as('textFunction');\n// cy.log(\"===== Print Value Using Invoke Command ==== \", this.textFunction);\ncy.get('[data-notify=\"message\"]').should('have.text', 'Deal saved successfully').then(() => {\n  done();\n});\n//To store deal number & display the same\n//it(\"Print Value - ALias => Invoke - Command \", function () {\n//  cy.log(\"===== Print Value Using Invoke Command ==== \", this.textFunction)\n//done();",
+              "err": {},
+              "uuid": "b8eac2fe-127d-4d84-b9c8-6177bca91e69",
+              "parentUUID": "445be9b4-bf42-446d-9533-d0b22895c4bc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fccfe8e5-4638-4104-b38f-98d6d5ffeabb",
+            "b8eac2fe-127d-4d84-b9c8-6177bca91e69"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 131392,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
