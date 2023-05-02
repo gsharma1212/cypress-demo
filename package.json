@@ -7,9 +7,8 @@
     "nonGlobalStepDefinitions": true
   },
   "scripts": {
-    "chrome-test": "cypress run --browser chrome --headless",
-    "postchrome-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\" ",
-    "script-chrome": "npm run chrome-test || npm run postchrome-test"
+    "chrome-test": "cypress-ntlm run --browser chrome --headless",
+    "script-chrome": "npx run chrome-test"
   },
   "author": "gauravs",
   "license": "ISC",
