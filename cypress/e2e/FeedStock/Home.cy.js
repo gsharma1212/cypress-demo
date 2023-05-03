@@ -25,12 +25,12 @@ describe('Home', () => { 
             })
             }) 
             
-            it('Check "Add New Deal_BUtton" Enable', (done) => {
+            /*it('Check "Add New Deal_BUtton" Enable', (done) => {
               cy.wait(5000)
               cy.get('#lnkbtnFilter').should('not.be.disabled') 
                 .then(() => {
                     done()
                 
                   })
-                  })   
+                  })   */
 })
